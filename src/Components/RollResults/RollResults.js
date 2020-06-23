@@ -3,12 +3,9 @@ import './RollResults.css';
 
 class RollResults extends React.Component {
     
-    show() {
-        document.getElementById('rollResults').style.visibility = "visible";
-    }
-
     render() {
         return (
+            //Returns the total roll and the type of dice and number of dice selected
             <p id="rollResults">{this.props.numDie}d{this.props.typeDie} resulted in: {this.props.rollTotal}</p>
 
         )

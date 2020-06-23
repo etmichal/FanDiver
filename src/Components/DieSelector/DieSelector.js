@@ -22,6 +22,7 @@ class DieSelector extends React.Component {
         return (
             <form>
           <div id='selectDice'>
+          {/* Generates dropdowns to select number of dice to roll, upon selection the state of *numeDie* will be updated */}
           <label for="numDie">Number of Dice: </label>
           <select name="numDie" id="numDie" onChange={this.handleNumChange}>
             <option value="1">1</option>
@@ -35,6 +36,7 @@ class DieSelector extends React.Component {
             <option value="9">9</option>
             <option value="10">10</option>
           </select>
+          {/* Generates dropdowns to select the type of die, upon selection the state of *typeDie* will be updated   */}
           <label for="typeDie">Number of Sides: </label>
           <select name="typeDie" id="typeDie" onChange={this.handleTypeChange}>
             <option value="4">4</option>
