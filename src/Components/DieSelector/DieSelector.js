@@ -1,5 +1,6 @@
 import React from 'react';
-import './DieSelector.css'
+import './DieSelector.css';
+import { updateNumDie, updateTypeDie } from './UpdateDiceValues';
 
 class DieSelector extends React.Component {
     
@@ -11,11 +12,11 @@ class DieSelector extends React.Component {
     }
 
     handleNumChange(e) {
-        this.props.onNumChange(Number(e.target.value));
+        updateNumDie(e.target.value, this.props.onNumChange);
     }
 
     handleTypeChange(e) {
-        this.props.onTypeChange(Number(e.target.value));
+        updateTypeDie(e.target.value, this.props.onTypeChange);
     }
 
     render() {
@@ -23,7 +24,7 @@ class DieSelector extends React.Component {
             <form>
           <div id='selectDice'>
           {/* Generates dropdowns to select number of dice to roll, upon selection the state of *numeDie* will be updated */}
-          <label for="numDie">Number of Dice: </label>
+          <label htmlFor="numDie">Number of Dice: </label>
           <select name="numDie" id="numDie" onChange={this.handleNumChange}>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -37,7 +38,7 @@ class DieSelector extends React.Component {
             <option value="10">10</option>
           </select>
           {/* Generates dropdowns to select the type of die, upon selection the state of *typeDie* will be updated   */}
-          <label for="typeDie">Number of Sides: </label>
+          <label htmlFor="typeDie">Number of Sides: </label>
           <select name="typeDie" id="typeDie" onChange={this.handleTypeChange}>
             <option value="4">4</option>
             <option value="6">6</option>

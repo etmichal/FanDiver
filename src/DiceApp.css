@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+main {
+  background-color: #282c34;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  padding: 10px;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+/*===========================================================================================================
+These classes control the visibility of the roll results and roll total elements
+============================================================================================================*/
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+/*===========================================================================================================
+Stylings of the the displayed roll results
+============================================================================================================*/
+
+#displayRolls {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  background-color:  #61dafb;
+  border: 3px solid white;
+}
+
+#displayRolls li {
+  margin: 0 10px 0 10px;
+  padding: 0 5px 0 5px;
+
+  font-weight: bold;
+}
