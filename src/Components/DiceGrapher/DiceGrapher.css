@@ -1,0 +1,55 @@
+section {
+    min-height: 50vh;
+}
+
+#dropdowns {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 15vh;
+}
+
+.selector {
+    display: block;
+    max-width: 400px;
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+.selector .selector-title {
+    margin: 15px 0 10px 0;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#graphSection form .selectDice {
+    display: inline-flex;
+    min-width: 350px;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+#graphSection button {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+#graph .invisible {
+    visibility: hidden;
+}
+
+#graph .visible {
+    visibility: visible;
+}
+
+.selector .stat-text {
+    font-size: 12pt;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.stats {
+    font-weight: 100;
+}

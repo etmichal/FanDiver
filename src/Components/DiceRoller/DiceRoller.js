@@ -1,6 +1,7 @@
 import { rollDice } from './Roll/Roll';
 import React from 'react';
 import DieSelector from '../DieSelector/DieSelector';
+import './DiceRoller.css';
 
 
 class DiceRoller extends React.Component {

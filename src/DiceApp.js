@@ -18,7 +18,7 @@ class DiceApp extends React.Component {
         <header className="App-header">
         </header>
           <DiceRoller />
-          {/* <DiceGrapher setNum={this.setNum} setType={this.setType}/> */}
+          <DiceGrapher />
           
       </div>
     );

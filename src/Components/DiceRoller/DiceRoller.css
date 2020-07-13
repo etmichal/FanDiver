@@ -1,0 +1,9 @@
+main button {
+    margin-top: 20px;
+}
+
+main form .selectDice {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
